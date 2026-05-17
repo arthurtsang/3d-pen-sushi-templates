@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="650" viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grid background -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="650" fill="url(#grid)" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#1f2937">3D Pen Sushi Box Template</text>
+  <text x="400" y="75" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#6b7280">Salmon Lid on Rice & Seaweed Box • Trace & Layer for 3D Effect</text>
+
+  <!-- Sushi Box Base (Rice & Seaweed) - larger rectangular box -->
+  <!-- Bottom face (rice base) -->
+  <polygon points="250,380 550,380 580,480 220,480" fill="#f8e8c7" stroke="#d97706" stroke-width="6" stroke-linejoin="round"/>
+  
+  <!-- Seaweed sides -->
+  <!-- Left side -->
+  <polygon points="250,380 220,480 220,320 250,250" fill="#166534" stroke="#14532d" stroke-width="5"/>
+  <!-- Right side -->
+  <polygon points="550,380 580,480 580,320 550,250" fill="#166534" stroke="#14532d" stroke-width="5"/>
+  <!-- Front seaweed -->
+  <rect x="250" y="380" width="300" height="100" rx="5" fill="#166534" stroke="#14532d" stroke-width="5"/>
+
+  <!-- Rice texture lines -->
+  <g opacity="0.6">
+    <line x1="280" y1="410" x2="520" y2="410" stroke="#f5d07a" stroke-width="4"/>
+    <line x1="270" y1="430" x2="530" y2="430" stroke="#f5d07a" stroke-width="4"/>
+    <line x1="290" y1="450" x2="510" y2="450" stroke="#f5d07a" stroke-width="4"/>
+  </g>
+
+  <!-- Salmon Lid (top layer, slightly offset for lid effect) -->
+  <!-- Salmon rectangle lid -->
+  <polygon points="260,280 540,280 570,370 230,370" fill="#f87171" stroke="#b91c1c" stroke-width="6" stroke-linejoin="round"/>
+  
+  <!-- Salmon texture (stripes) -->
+  <g opacity="0.7">
+    <line x1="280" y1="300" x2="520" y2="300" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="275" y1="320" x2="525" y2="320" stroke="#ef4444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="285" y1="340" x2="515" y2="340" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Salmon shine highlights -->
+  <polygon points="290,290 310,290 500,355 480,355" fill="#ffffff" opacity="0.25"/>
+
+  <!-- Chopsticks guide (for scale) -->
+  <g transform="translate(620,420)">
+    <rect x="0" y="0" width="120" height="12" rx="6" fill="#854d0e" stroke="#783f0c" stroke-width="3"/>
+    <rect x="0" y="25" width="120" height="12" rx="6" fill="#854d0e" stroke="#783f0c" stroke-width="3"/>
+  </g>
+  <text x="680" y="480" font-family="Arial" font-size="14" text-anchor="middle" fill="#6b7280">Chopsticks (scale)</text>
+
+  <!-- Instructions -->
+  <text x="50" y="540" font-family="Arial" font-size="16" fill="#1f2937">1. Trace box base (seaweed/rice) with dark green & beige.</text>
+  <text x="50" y="565" font-family="Arial" font-size="16" fill="#1f2937">2. Trace salmon lid on top in orange/pink with stripes.</text>
+  <text x="50" y="590" font-family="Arial" font-size="16" fill="#1f2937">3. Build layers on edges for 3D pop-out lid effect.</text>
+  <text x="50" y="615" font-family="Arial" font-size="16" fill="#1f2937">Tip: Use multiple passes for raised salmon texture.</text>
+
+  <!-- Small example completed sushi -->
+  <g transform="translate(620,200) scale(0.8)">
+    <!-- Small box -->
+    <rect x="10" y="60" width="80" height="45" fill="#166534" stroke="#14532d" stroke-width="4"/>
+    <rect x="15" y="55" width="70" height="35" fill="#f8e8c7" stroke="#d97706" stroke-width="3"/>
+    <!-- Small salmon -->
+    <rect x="18" y="38" width="65" height="25" rx="3" fill="#f87171" stroke="#b91c1c" stroke-width="3"/>
+    <line x1="22" y1="45" x2="78" y2="45" stroke="#ef4444" stroke-width="3"/>
+  </g>
+</svg>

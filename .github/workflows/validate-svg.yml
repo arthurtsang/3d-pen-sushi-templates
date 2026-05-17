@@ -1,0 +1,19 @@
+name: Validate SVG
+
+on:
+  push:
+    paths:
+      - '**.svg'
+  pull_request:
+    paths:
+      - '**.svg'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate SVG files
+        uses: szepeviktor/svg-validator@v1
+        with:
+          svg_path: '**/*.svg'
